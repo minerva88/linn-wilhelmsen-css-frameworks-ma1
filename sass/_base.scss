@@ -1,0 +1,9 @@
+body {
+    background-color: map-get($colours, background);
+    color: map-get($colours, black);
+    font-family: $font-header;
+}
+
+h2 {
+    padding: 70px 0;
+}

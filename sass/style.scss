@@ -4,25 +4,13 @@ $colours: (
     white: #FFFFFF,
     pink: #C32C72,
     black: #262626,
+    grey: #BCB8B1,
 );
 
 $font-header: 'Open Sans', sans-serif;
 $font-main: 'Archivo Narrow', sans-serif;
 
-
-
-body {
-    background-color: map-get($colours, background);
-    color: map-get($colours, black);
-}
-
-header {
-    font-family: $font-header;
-}
-
-main {
-    max-width: 1140px;
-    text-align: center;
-    display: flex;
-    margin: 0 auto;
-}
+@import "layout";
+@import "base";
+@import "nav";
+@import "footer";

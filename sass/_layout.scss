@@ -1,0 +1,30 @@
+main {
+    max-width: 1140px;
+    text-align: center;
+    display: flex;
+    margin: 0 auto;
+    
+}
+
+.row {
+    display: flex;
+
+}
+
+.col-sm {
+    height: 263px;
+    border: solid map-get($colours, header) 3px;
+    border-radius: 15px;
+    margin: 10px;
+    box-shadow: 6px 12px 6px map-get($colours, grey);
+}
+
+.cont-pink {
+    border: solid map-get($colours, white) 3px;
+    background-color: map-get($colours, pink);
+}
+
+.cont-white {
+    border: solid map-get($colours, pink) 3px;
+    background-color: map-get($colours, white);
+}
