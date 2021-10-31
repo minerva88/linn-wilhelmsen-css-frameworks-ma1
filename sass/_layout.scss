@@ -19,12 +19,12 @@ main {
     box-shadow: 6px 12px 6px map-get($colours, grey);
 }
 
-.cont-pink {
+.contained__item--pink {
     border: solid map-get($colours, white) 3px;
     background-color: map-get($colours, pink);
 }
 
-.cont-white {
+.contained__item--white {
     border: solid map-get($colours, pink) 3px;
     background-color: map-get($colours, white);
 }

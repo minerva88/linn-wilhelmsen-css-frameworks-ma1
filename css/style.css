@@ -22,12 +22,12 @@ main {
           box-shadow: 6px 12px 6px #BCB8B1;
 }
 
-.cont-pink {
+.contained__item--pink {
   border: solid #FFFFFF 3px;
   background-color: #C32C72;
 }
 
-.cont-white {
+.contained__item--white {
   border: solid #C32C72 3px;
   background-color: #FFFFFF;
 }
@@ -46,15 +46,40 @@ a.active {
   color: #C32C72;
 }
 
-footer {
+.footer {
   height: 44px;
   width: 100%;
   background-color: #F4F3EE;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  margin-top: 70px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 100px;
+}
+
+.footer__elem, .footer--copyright::before {
+  margin: 7px 20px;
+}
+
+/*Implementation of BEM, would not work on its own.*/
+.contained__item, .contained--pink::before, .contained--white::before {
+  height: 263px;
+  border: solid #F4F3EE 3px;
+  border-radius: 15px;
+  margin: 10px;
+  -webkit-box-shadow: 6px 12px 6px #BCB8B1;
+          box-shadow: 6px 12px 6px #BCB8B1;
+}
+
+.contained--pink::before {
+  border: solid #FFFFFF 3px;
+  background-color: #C32C72;
+}
+
+.contained--white::before {
+  border: solid #C32C72 3px;
+  background-color: #FFFFFF;
 }
 /*# sourceMappingURL=style.css.map */
